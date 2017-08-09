@@ -1,0 +1,10 @@
+/target
+/.git
+/.settings
+/workspace
+/.classpath
+/.project
+/.idea
+*.iml
+bin/
+
