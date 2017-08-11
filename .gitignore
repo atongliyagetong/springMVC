@@ -1,4 +1,6 @@
 /target
+/src/test/java
+*.jsp
 /.git
 /.settings
 /workspace

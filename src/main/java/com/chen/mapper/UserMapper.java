@@ -4,6 +4,6 @@ import java.util.List;
 
 import com.chen.entity.User;
 
-public interface userMapper {
+public interface UserMapper {
   public List<User> findAll();
 }
