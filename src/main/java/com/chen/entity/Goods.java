@@ -6,6 +6,15 @@ public class Goods {
 	private String goodsName;
 	private String price;
 	private String createTime;
+	
+	
+	public Goods(String goodsNo, String goodsName, String price) {
+		super();
+		this.goodsNo = goodsNo;
+		this.goodsName = goodsName;
+		this.price = price;
+	}
+	
 	public String getId() {
 		return id;
 	}
@@ -35,6 +44,11 @@ public class Goods {
 	}
 	public void setCreateTime(String createTime) {
 		this.createTime = createTime;
+	}
+	@Override
+	public String toString() {
+		return "Goods [id=" + id + ", goodsNo=" + goodsNo + ", goodsName=" + goodsName + ", price=" + price
+				+ ", createTime=" + createTime + "]";
 	}
 	
 	

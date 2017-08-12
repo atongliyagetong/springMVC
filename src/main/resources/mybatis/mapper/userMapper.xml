@@ -5,4 +5,8 @@
 	<select id="findAll" resultType="com.chen.entity.User">
 		select * from user 
 	</select>
+	<!-- 登录校验，查询User -->
+	<select id="selectByUsername" resultType="User" parameterType="string">
+		select * from user where username=#{username}
+	</select>
 </mapper>
