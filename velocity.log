@@ -1,0 +1,11 @@
+2017-08-12 21:26:28,365 - ResourceManager : unable to find resource 'hellovelocity.vm' in any resource loader.
+2017-08-12 21:28:21,719 - ResourceManager : unable to find resource 'classpath:WEB-INF/hellovelocity.vm' in any resource loader.
+2017-08-12 21:28:56,097 - ResourceManager : unable to find resource 'src/main/webapp/WEB-INF/hellovelocity.vm' in any resource loader.
+2017-08-12 21:29:43,655 - ResourceManager : unable to find resource 'hellovelocity.vm' in any resource loader.
+2017-08-12 21:30:04,870 - ResourceManager : unable to find resource '/WEB-INF/vm/hellovelocity.vm' in any resource loader.
+2017-08-12 21:30:15,110 - ResourceManager : unable to find resource 'classpath:WEB-INF/vm/hellovelocity.vm' in any resource loader.
+2017-08-12 21:30:44,295 - ResourceManager : unable to find resource 'hellovelocity.vm' in any resource loader.
+2017-08-12 21:34:12,580 - ResourceManager : unable to find resource 'hellovelocity.vm' in any resource loader.
+2017-08-12 21:43:15,206 - ResourceManager : unable to find resource 'hellovelocity.vm' in any resource loader.
+2017-08-12 21:45:27,823 - ResourceManager : unable to find resource 'hellovelocity.vm' in any resource loader.
+2017-08-12 21:48:26,491 - ResourceManager : unable to find resource 'hellovelocity.vm' in any resource loader.

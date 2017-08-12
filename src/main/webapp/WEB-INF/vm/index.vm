@@ -1,0 +1,72 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<html>
+<head>
+	<title>登录</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../../resource/css/style.css">
+	<script src="../../resource/js/jquery.js"></script>
+</head>
+<body>
+
+	<div class="login-nav fix">
+		<ul class="f-r">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">协同</a></li>
+			<li><a href="#">应用</a></li>
+			<li><a href="#">案例</a></li>
+			<li><a href="#">开发者</a></li>
+			<li><a href="#">企业版</a></li>
+		</ul>
+	</div>
+
+	<div class="login-banner"></div>
+
+	<div class="login-box">
+
+		<div class="box-con tran">
+
+
+			<div class="login-con f-l">
+				
+				<form action="/login" method="post">
+				
+				<div class="form-group">
+					<input type="text" name="username" placeholder="用户名"/>
+				</div>
+
+				<div class="form-group">
+					<input type="password" name="password" placeholder="密码">
+				</div>
+
+				<div class="form-group">
+
+					<button type="submit" class="tran pr">
+								登录
+						<!-- <a href="javascript:;" class="tran">登录</a> -->
+
+					</button>
+				</div>
+				
+				
+				</form>
+				
+			</div>
+
+		</div>
+
+	</div>
+
+	
+	<div class="login-footer">
+
+		<h1>jQuary插件库</h1>
+
+		<p>Copyright© 2014-2015 Powered by http://www.jq22.com/ </p>
+
+		<p>沪ICP备13043785号-1</p>
+
+	</div>
+
+</body>
+</html>

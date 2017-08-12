@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace用作标识mapper的唯一，通常包名+文件名 -->
+<mapper namespace="com.chen.mapper.GoodsMapper">
+	<resultMap type="Goods" id="goodsResultMap">
+		<id property="id" column="id"/>
+		<result property="goodsNo" column="goods_no"/>
+		<result property="goodsName" column="goods_name"/>
+		<result property="price" column="price"/>
+		<result property="createTime" column="create_time"/>
+	</resultMap>
+	
+  	<select id="selectByGoodsNo"  resultMap="goodsResultMap">
+  		select * from goods  order by id limit #{offset},#{rowCount}
+  	</select>
+  	
+  	<select id="selectRowNum" resultType="int">
+  		select count(id) from goods
+  	</select>
+  	
+  	<select id="selectOneRow" resultMap="goodsResultMap">
+  		select * from goods where goods_no=#{goodsNo}
+  	</select>
+  	
+  	<update id="updateGoodsOne" parameterType="Goods">
+  		update goods 
+  		set goods_no=#{goodsNo},goods_name=#{goodsName},price=#{price},create_time=#{createTime} 
+  		where  goods_no=#{goodsNo}
+  	</update>
+  	
+  	<insert id="insertGoods" parameterType="Goods">
+  		insert into goods (goods_no,goods_name,price) values(#{goods.goodsNo},#{goods.goodsName},#{goods.price})
+  	</insert>
+  	
+  	<delete id="deleteGoodsByNo">
+  		delete from goods where goods_no=#{goodsNo}
+  	</delete>
+</mapper>
