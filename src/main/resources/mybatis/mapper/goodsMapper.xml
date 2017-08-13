@@ -29,7 +29,7 @@
   	</update>
   	
   	<insert id="insertGoods" parameterType="Goods">
-  		insert into goods (goods_no,goods_name,price) values(#{goods.goodsNo},#{goods.goodsName},#{goods.price})
+  		insert into goods (goods_no,goods_name,price) values(#{goodsNo},#{goodsName},#{price})
   	</insert>
   	
   	<delete id="deleteGoodsByNo">

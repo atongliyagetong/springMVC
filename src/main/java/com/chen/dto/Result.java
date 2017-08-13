@@ -2,15 +2,40 @@ package com.chen.dto;
 
 public class Result<T> {
 	
-	private PageBar pageBar;
+	private Page page;
 	private T data;
 	private boolean success;
 	
-	public PageBar getPageBar() {
-		return pageBar;
+	
+	
+	public Result() {
+		super();
 	}
-	public void setPageBar(PageBar pageBar) {
-		this.pageBar = pageBar;
+
+	public Result(Page page, T data, boolean success) {
+		super();
+		this.page = page;
+		this.data = data;
+		this.success = success;
+	}
+	
+	public Result(T data, boolean success) {
+		super();
+		this.data = data;
+		this.success = success;
+	}
+	
+	
+	public Result(boolean success) {
+		super();
+		this.success = success;
+	}
+
+	public Page getPage() {
+		return page;
+	}
+	public void setPage(Page page) {
+		this.page = page;
 	}
 	public T getData() {
 		return data;
