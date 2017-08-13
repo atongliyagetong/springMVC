@@ -8,6 +8,10 @@ public class Goods {
 	private String createTime;
 	
 	
+	public Goods() {
+		super();
+	}
+
 	public Goods(String goodsNo, String goodsName, String price) {
 		super();
 		this.goodsNo = goodsNo;

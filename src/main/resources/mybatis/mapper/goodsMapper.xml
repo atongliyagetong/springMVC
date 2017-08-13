@@ -7,10 +7,10 @@
 		<result property="goodsNo" column="goods_no"/>
 		<result property="goodsName" column="goods_name"/>
 		<result property="price" column="price"/>
-		<result property="createTime" column="create_time"/>
+		<result property="createTime" column="create_time" javaType="string" jdbcType="TIMESTAMP"/>
 	</resultMap>
 	
-  	<select id="selectByGoodsNo"  resultMap="goodsResultMap">
+  	<select id="selectGoodsByLimit"  resultMap="goodsResultMap">
   		select * from goods  order by id limit #{offset},#{rowCount}
   	</select>
   	
